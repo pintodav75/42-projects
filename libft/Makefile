@@ -20,7 +20,7 @@ $(NAME): $(OBJS)
 	   ar crs $(NAME) $^
 
 $(SRCDIR)/%.o: $(SRCDIR)/%.c
-	gcc $(CFLAGS) -c $< -o $@ -I./
+	cc $(CFLAGS) -c $< -o $@ -I./
 
 clean:
 	rm -f $(OBJS) $(OBJSB)
